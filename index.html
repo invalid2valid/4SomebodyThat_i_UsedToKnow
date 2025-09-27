@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Song</title>
+  <script>
+    // Step 1: Add all your YouTube song links here
+    const songs = [
+      "https://youtu.be/CBfqi_nrif8?si=g_lmyGxXTJwOr4in",
+      "https://youtu.be/6YzGOq42zLk?si=zA7gvcfAJjWW4jgs",
+      "https://youtu.be/t99Z5ym-nJY?si=vILEsUJDugKOcnQQ"
+    ];
+
+    // Step 2: Pick a random song
+    const randomSong = songs[Math.floor(Math.random() * songs.length)];
+
+    // Step 3: Redirect to the random song
+    window.location.href = randomSong;
+  </script>
+</head>
+<body>
+  <p>Redirecting to a random song...</p>
+</body>
+</html>
